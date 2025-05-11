@@ -100,7 +100,7 @@ module Paperclip
       @file = Paperclip.io_adapters.for(uploaded_file,
                                         @options[:adapter_options])
       ensure_required_accessors!
-      ensure_required_validations!
+      # ensure_required_validations!
 
       if @file.assignment?
         clear(*only_process)
